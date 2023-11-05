@@ -5,12 +5,16 @@
   --ghost-white:#F9FAFB;
   --police-blue:#424F5E;
   --medium-sea-green:#32C076;
+  --very-light-blue:#5A57FF;
+  --vivid-tangerine:#FF9E90;
 
   --color-bg-primary:var(--bright-gray);
   --color-bg-secondary:var(--ghost-white);
 
   --color-text-primary:var(--police-blue); 
   --color-text-secondary:var(--spanish-gray); 
+
+  --color-button-primary:var(--medium-sea-green);
 
   --size-radius-primary:15px;
   --size-radius-secondary:25px;
@@ -20,7 +24,6 @@
 *{
   margin: 0;
   padding: 0;
-
   color: var(--color-text-primary); 
   font-family: Futura PT;
 }
@@ -29,6 +32,12 @@ body{
   background-color: var(--color-bg-primary);
 }
 
-body > *{
-  background-color: var(--color-bg-secondary);
-}
+img {
+  border-radius: 100%;
+  object-fit:cover;
+ }
+
+ button{
+  background: none;
+  border: none;
+ }
