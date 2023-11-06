@@ -1,0 +1,51 @@
+.admin-panel {
+  width: 80%;
+  min-height: 20vh;
+  border-radius: var(--size-radius-primary);
+  background-color: var(--color-bg-secondary);
+  margin: 4rem  6rem 0 calc(8rem + 6rem ); 
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: calc(100%-4rem);
+  height: 2rem ;
+
+  padding: 1rem 2rem;
+
+  border-bottom: 1px solid var(--color-bg-primary);
+}
+
+.search {
+  width: 40rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: var(--size-radius-tertiary);
+  border: 1px solid var(--color-border-primary);
+}
+
+.search > input {
+  width: 100%;
+  border: none;
+  background: none;
+}
+
+.search > input:focus{
+  outline: none;
+}
+
+#search-icon{
+  display: none;
+}
+
+.add-user{
+  padding: 0.5rem 1rem;
+  background-color: var(--color-button-primary);
+  color: var(--color-text-tertiary);
+  border-radius: var(--size-radius-tertiary);
+}
