@@ -13,23 +13,28 @@
 
   --color-text-primary:var(--police-blue); 
   --color-text-secondary:var(--spanish-gray); 
+  --color-text-tertiary:var(--ghost-white);
 
   --color-button-primary:var(--medium-sea-green);
 
+  --color-border-primary:var(--lavender-gray);
+
   --size-radius-primary:15px;
   --size-radius-secondary:25px;
-
+  --size-radius-tertiary:10px;
+  
 }
 
 *{
   margin: 0;
-  padding: 0;
   color: var(--color-text-primary); 
   font-family: Futura PT;
+  cursor: url('assets/cursor.svg'), auto
 }
 
 body{
   background-color: var(--color-bg-primary);
+
 }
 
 img {
@@ -41,3 +46,4 @@ img {
   background: none;
   border: none;
  }
+
