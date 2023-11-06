@@ -1,0 +1,59 @@
+.user-list{
+  width: 100%;
+}
+
+.user{
+  display: flex;
+  justify-content: space-between;
+  width: calc(100%-4rem);
+  padding: 1.2rem  2rem ;  
+}
+.option{
+  align-self: start;
+}
+
+.user-info{
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.imageError{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 64px;
+  height: 64px;
+  background-color: var(--color-bg-primary);
+}
+
+.title{
+  display: flex;
+  gap: 0.6rem;
+}
+.title > .name{
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.25rem
+}
+.title > .email{
+  color: var(--color-text-secondary);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.25rem
+}
+
+.bundels-list{
+  display: flex;
+  gap: 0.31rem;
+  margin-top: 0.7rem;
+}
+
+.bundel{
+  color: var(--color-text-secondary);  
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--size-radius-tertiary);
+  padding: 0.3rem 1rem;
+  background: none;
+}
