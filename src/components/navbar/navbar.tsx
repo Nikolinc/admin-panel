@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { AuthSelector } from 'store/slices/authSlices';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import './navbar.css';
 import { IUser } from 'type/user';
 import { ReactComponent as Logo } from 'assets/icons/logo.svg';
@@ -25,23 +25,27 @@ function NavBar() {
   const auth: IUser = useSelector(AuthSelector.getAuth);
 
   return (
-    <div className="nav-bar">
-      <Logo />
-      <img src={auth.image} alt="avatar" width={60} height={60} />
-      <div className="nav">
-        <Link to="/" ><Dashboard /></Link>
-        <Link to="/"><User /></Link>
-        <Link to="/"><Task /></Link>
-        <Link to="/"><MSG /></Link>
-        <Link to="/"><Image /></Link>
-        <Link to="/"><Team /></Link>
-        <Link to="/"><Docs /></Link>
-        <Link to="/" className='coin'><Coin /></Link>
-        <Link to="/"><Finance /></Link>
-        <button><Exit /></button>
-      </div>
+    <div className="root">
+      <div className="nav-bar">
+        <Logo />
+        <img src={auth.image} alt="avatar" width={60} height={60} />
+        <div className="nav">
+          <Link to="/" ><Dashboard /></Link>
+          <Link to="/"><User /></Link>
+          <Link to="/"><Task /></Link>
+          <Link to="/"><MSG /></Link>
+          <Link to="/"><Image /></Link>
+          <Link to="/"><Team /></Link>
+          <Link to="/"><Docs /></Link>
+          <Link to="/" className='coin'><Coin /></Link>
+          <Link to="/"><Finance /></Link>
+          <button><Exit /></button>
+        </div>
 
+      </div>
+      <Outlet />
     </div>
+
   )
 }
 
